@@ -6,8 +6,6 @@
   <p align="center">
     It is a very basic simple calculator which I created using Java language 
     
-    <br />
-    <br />
    
   </p>
 </p>
