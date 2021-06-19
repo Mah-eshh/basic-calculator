@@ -5,6 +5,8 @@
  */
 package newpackage;
 
+import javax.swing.UIManager;
+
 /**
  *
  * @author Mahesh
@@ -40,6 +42,8 @@ public class NewJFrame extends javax.swing.JFrame {
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
+        jLabel5 = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -72,7 +76,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 okbtnActionPerformed(evt);
             }
         });
-        jPanel1.add(okbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 230, 70, 50));
+        jPanel1.add(okbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 250, 70, 50));
 
         answerbox.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         answerbox.addActionListener(new java.awt.event.ActionListener() {
@@ -80,15 +84,15 @@ public class NewJFrame extends javax.swing.JFrame {
                 answerboxActionPerformed(evt);
             }
         });
-        jPanel1.add(answerbox, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 230, 50, 50));
+        jPanel1.add(answerbox, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 250, 50, 50));
 
         jLabel1.setFont(new java.awt.Font("Jokerman", 0, 18)); // NOI18N
         jLabel1.setText("Answer");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 220, 90, 60));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 240, 90, 60));
 
         jLabel2.setFont(new java.awt.Font("Jokerman", 0, 18)); // NOI18N
         jLabel2.setText("First number");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 90, -1, 40));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, 150, 40));
 
         jButton1.setFont(new java.awt.Font("Castellar", 1, 12)); // NOI18N
         jButton1.setText("CLEAR");
@@ -97,11 +101,11 @@ public class NewJFrame extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 230, 90, 50));
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 250, 90, 50));
 
         jLabel3.setFont(new java.awt.Font("Jokerman", 0, 18)); // NOI18N
         jLabel3.setText("Second number");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, -1, 30));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 140, 150, 30));
 
         jButton2.setBackground(new java.awt.Color(102, 102, 255));
         jButton2.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
@@ -111,7 +115,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 100, 50, 40));
+        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 100, 50, 40));
 
         jButton3.setBackground(new java.awt.Color(102, 102, 255));
         jButton3.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
@@ -121,7 +125,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 jButton3ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 140, 50, 40));
+        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 140, 50, 40));
 
         jButton4.setBackground(new java.awt.Color(102, 102, 255));
         jButton4.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
@@ -131,7 +135,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 jButton4ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 180, 50, 40));
+        jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 180, 50, 40));
 
         jButton5.setBackground(new java.awt.Color(102, 102, 255));
         jButton5.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
@@ -141,16 +145,28 @@ public class NewJFrame extends javax.swing.JFrame {
                 jButton5ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 60, 50, 40));
+        jPanel1.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 60, 50, 40));
 
-        jLabel4.setFont(new java.awt.Font("Chiller", 1, 36)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 153, 153));
-        jLabel4.setText("SIMPLE CALCULATOR");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, 50));
+        jLabel5.setFont(new java.awt.Font("Chiller", 1, 36)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 153, 153));
+        jLabel5.setText("SIMPLE   CALCULATOR");
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 350, 50));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(18, 16, 350, 320));
 
-        pack();
+        jPanel2.setBackground(new java.awt.Color(0, 51, 102));
+        jPanel2.setForeground(new java.awt.Color(102, 102, 102));
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel4.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 12)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(102, 102, 255));
+        jLabel4.setText(" created by Mah-eshh");
+        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 350, 140, 30));
+
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, -20, 400, 380));
+
+        setSize(new java.awt.Dimension(400, 396));
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void firstvalueboxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_firstvalueboxActionPerformed
@@ -228,10 +244,8 @@ public class NewJFrame extends javax.swing.JFrame {
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
+                
+                UIManager.setLookAndFeel("com.jtattoo.plaf.aero.AeroLookAndFeel");
             }
         } catch (ClassNotFoundException ex) {
             java.util.logging.Logger.getLogger(NewJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
@@ -264,7 +278,9 @@ public class NewJFrame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JButton okbtn;
     private javax.swing.JTextField secondvaluebox;
     // End of variables declaration//GEN-END:variables
